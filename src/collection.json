@@ -1,0 +1,10 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "run": {
+      "description": "A blank schematic.",
+      "factory": "./parse-int/index#analyzerAndCodeFixTSSchematics",
+      "schema": "./parse-int/schema.json"
+    }
+  }
+}

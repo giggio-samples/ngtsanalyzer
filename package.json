@@ -1,0 +1,27 @@
+{
+  "name": "analyzer-and-code-fix-tsschematics",
+  "version": "0.0.1",
+  "description": "A blank schematics",
+  "scripts": {
+    "build": "tsc -p tsconfig.json && xcopy /s src\\*.json dist\\",
+    "test": "npm run build && jasmine dist/**/*_spec.js"
+  },
+  "keywords": [
+    "schematics"
+  ],
+  "author": "Giovanni Bassi <giggio@giggio.net>",
+  "license": "MIT",
+  "schematics": "./dist/collection.json",
+  "dependencies": {
+    "@angular-devkit/core": "^8.1.2",
+    "@angular-devkit/schematics": "^8.1.2",
+    "@schematics/angular": "^8.1.2",
+    "ts-morph": "^3.1.3",
+    "typescript": "~3.4.3"
+  },
+  "devDependencies": {
+    "jasmine": "^3.4.0",
+    "@types/jasmine": "^3.3.13",
+    "@types/node": "^12.6.8"
+  }
+}
